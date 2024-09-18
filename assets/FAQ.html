@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQ - LearnGo</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        nav {
+            background-color: #20164d;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+        nav img {
+            height: 50px;
+            transition: transform 0.3s ease; 
+        }
+
+        nav img:hover {
+            transform: scale(1.1); 
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease; 
+        }
+
+        nav ul li a:hover {
+            color: #ff784e; 
+        }
+
+        .container {
+            flex: 1;
+            padding: 40px;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #20164d;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            background-color: #DFD8FF;
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: #20164d;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: #333;
+            font-size: 16px; 
+        }
+
+        footer {
+            background-color: #20164d;
+            color: white; 
+            text-align: center;
+            padding: 15px; 
+            margin-top: auto;
+            font-size: 14px; 
+        }
+
+        footer p {
+            margin: 0;
+            color: white; 
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            .container {
+                padding: 30px 10px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .faq-answer {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav img {
+                height: 40px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .faq-answer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="LogoLearnGo.png" alt="Logo LearnGo">
+        <ul>
+            <li><a href="Index.html">Início</a></li>
+            <li><a href="Sobre.html">Sobre</a></li>
+            <li><a href="ComoFunciona.html">Como Funciona</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+            <li><a href="FAQ.html">Perguntas Frequentes</a></li>
+            <li><a href="Historias.html">Histórias</a></li>
+            <li><a href="Estatisticas.html">Estatísticas</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Perguntas Frequentes (FAQ)</h2>
+        <div class="faq-item">
+            <div class="faq-question">O que é o LearnGo?</div>
+            <div class="faq-answer">
+                O LearnGo é uma plataforma projetada para conectar universitários através de caronas colaborativas, promovendo economia, sustentabilidade e interação social.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Como posso me cadastrar?</div>
+            <div class="faq-answer">
+                Para se cadastrar no LearnGo, você deve preencher os seguintes campos:
+                <ul>
+                    <li><strong>Nome Completo:</strong> Campo de texto para inserir seu nome completo.</li>
+                    <li><strong>Data de Nascimento:</strong> Campo de seleção para escolher sua data de nascimento.</li>
+                    <li><strong>RM:</strong> Campo de texto para inserir seu número de registro de matrícula.</li>
+                    <li><strong>Faculdade:</strong> Campo de seleção (dropdown) para escolher a faculdade onde estuda.</li>
+                    <li><strong>Curso:</strong> Campo de seleção (dropdown) para escolher o curso que você está realizando.</li>
+                    <li><strong>Senha:</strong> Campo de senha com requisitos mínimos de segurança.</li>
+                    <li><strong>E-mail:</strong> Campo de texto para inserir seu e-mail.</li>
+                    <li><strong>Endereço:</strong> Campo de texto para inserir seu endereço completo.</li>
+                </ul>
+                Após preencher todos os campos, você deve clicar no botão de cadastro para enviar o formulário.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">O uso do LearnGo é gratuito?</div>
+            <div class="faq-answer">
+                Sim, o uso básico do LearnGo é gratuito. No entanto, podem existir opções premium para funcionalidades adicionais no futuro.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Como posso entrar em contato com o suporte?</div>
+            <div class="faq-answer">
+                Você pode entrar em contato com nossa equipe de suporte através do formulário de contato disponível na página "Contato" do nosso site.
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LearnGo. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

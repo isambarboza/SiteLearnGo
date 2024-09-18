@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estatísticas de Caronas - LearnGo</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        nav {
+            background-color: #20164d;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+        nav img {
+            height: 50px;
+            transition: transform 0.3s ease; 
+        }
+
+        nav img:hover {
+            transform: scale(1.1); 
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease; 
+        }
+
+        nav ul li a:hover {
+            color: #ff784e; 
+        }
+
+        .container {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #20164d;
+            font-size: 30px; 
+            margin-bottom: 20px;
+        }
+
+        .estatisticas {
+            background-color: #DFD8FF;
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            margin-bottom: 20px;
+        }
+
+        .estatisticas h3 {
+            color: #20164d;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .numero-carros, .ultimo-mes, .usuarios {
+            background-color: #ff784e;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease; 
+        }
+
+        .numero-carros {
+            background-color: #ff784e;
+        }
+
+        .ultimo-mes, .usuarios {
+            background-color: #DFD8FF;
+            color: #20164d;
+        }
+
+        footer {
+            background-color: #20164d;
+            color: white;
+            text-align: center;
+            padding: 15px; 
+            margin-top: auto;
+            font-size: 14px; 
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .estatisticas {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .numero-carros, .ultimo-mes, .usuarios {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav img {
+                height: 40px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .numero-carros, .ultimo-mes, .usuarios {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="LogoLearnGo.png" alt="Logo LearnGo">
+        <ul>
+            <li><a href="Index.html">Início</a></li>
+            <li><a href="Sobre.html">Sobre</a></li>
+            <li><a href="ComoFunciona.html">Como Funciona</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+            <li><a href="FAQ.html">Perguntas Frequentes</a></li>
+            <li><a href="Historias.html">Histórias</a></li>
+            <li><a href="Estatisticas.html">Estatísticas</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Estatísticas de Caronas</h2>
+        <div class="estatisticas">
+            <h3>Quantidade de Carros Usados</h3>
+            <div class="numero-carros">
+                3.456
+            </div>
+        </div>
+
+        <div class="estatisticas">
+            <h3>Últimos Meses de Uso</h3>
+            <div class="ultimo-mes">
+                Agosto 2024: 1.234 Caronas
+            </div>
+            <div class="ultimo-mes">
+                Julho 2024: 980 Caronas
+            </div>
+            <div class="ultimo-mes">
+                Junho 2024: 1.245 Caronas
+            </div>
+        </div>
+
+        <div class="estatisticas">
+            <h3>Usuários que Utilizaram Carona</h3>
+            <div class="usuarios">
+                Fernando Mellado
+            </div>
+            <div class="usuarios">
+                Júlia Martins
+            </div>
+            <div class="usuarios">
+                Pedro Santos
+            </div>
+            <div class="usuarios">
+                Beatriz Camargo
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LearnGo. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

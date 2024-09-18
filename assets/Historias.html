@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Histórias de Usuários - LearnGo</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        nav {
+            background-color: #20164d;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+        nav img {
+            height: 50px;
+            transition: transform 0.3s ease; 
+        }
+
+        nav img:hover {
+            transform: scale(1.1); 
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease; 
+        }
+
+        nav ul li a:hover {
+            color: #ff784e; 
+        }
+
+        .container {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #20164d;
+            font-size: 30px; 
+            margin-bottom: 20px;
+        }
+
+        .story-card {
+            background-color: #DFD8FF;
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        .story-title {
+            font-weight: bold;
+            color: #20164d;
+            margin-bottom: 10px;
+        }
+
+        .story-content {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #20164d;
+            color: white; 
+            text-align: center;
+            padding: 15px; 
+            margin-top: auto;
+            font-size: 14px; 
+        }
+
+        footer p {
+            color: white; 
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            .container {
+                padding: 30px 10px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .story-card {
+                padding: 15px;
+            }
+
+            .story-content {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav img {
+                height: 40px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .story-content {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="LogoLearnGo.png" alt="Logo LearnGo">
+        <ul>
+            <li><a href="Index.html">Início</a></li>
+            <li><a href="Sobre.html">Sobre</a></li>
+            <li><a href="ComoFunciona.html">Como Funciona</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+            <li><a href="FAQ.html">Perguntas Frequentes</a></li>
+            <li><a href="Historias.html">Histórias</a></li>
+            <li><a href="Estatisticas.html">Estatísticas</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Histórias de Usuários</h2>
+        <div class="story-card">
+            <div class="story-title">João e sua primeira carona</div>
+            <div class="story-content">
+                João, um estudante de engenharia, compartilha como a LearnGo o ajudou a encontrar uma carona para sua faculdade. “Foi simples e rápido! Eu encontrei alguém da minha turma que morava perto e economizei muito em transporte.”
+            </div>
+        </div>
+        <div class="story-card">
+            <div class="story-title">Mariana e a economia no transporte</div>
+            <div class="story-content">
+                Mariana, estudante de medicina, conta como a LearnGo ajudou a reduzir seus gastos com transporte. “Além de economizar, conheci pessoas incríveis e fiz novas amizades. O aplicativo realmente faz a diferença no meu dia a dia.”
+            </div>
+        </div>
+        <div class="story-card">
+            <div class="story-title">Pedro e a sustentabilidade</div>
+            <div class="story-content">
+                Pedro, aluno de arquitetura, destaca como a LearnGo contribuiu para um transporte mais sustentável. “Utilizar o aplicativo não só reduz meus custos, mas também ajuda a diminuir a pegada de carbono. É uma iniciativa fantástica!”
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LearnGo. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

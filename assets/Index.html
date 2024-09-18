@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LearnGo - Carona Universitária</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        nav {
+            background-color: #20164d;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav img {
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        nav img:hover {
+            transform: scale(1.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff784e;
+        }
+
+        header {
+            background-color: #DFD8FF;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            color: #20164d;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        .botao-cta {
+            background-color: #ff784e;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .botao-cta:hover {
+            background-color: #ff5722;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #20164d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+            font-size: 14px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            header {
+                padding: 40px 10px;
+            }
+
+            .botao-cta {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            header p {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav img {
+                height: 40px;
+            }
+
+            header h1 {
+                font-size: 22px;
+            }
+
+            header p {
+                font-size: 12px;
+            }
+
+            .botao-cta {
+                font-size: 12px;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="LogoLearnGo.png" alt="Logo LearnGo">
+        <ul>
+            <li><a href="Index.html">Início</a></li>
+            <li><a href="Sobre.html">Sobre</a></li>
+            <li><a href="ComoFunciona.html">Como Funciona</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+            <li><a href="FAQ.html">Perguntas Frequentes</a></li>
+            <li><a href="Historias.html">Histórias</a></li>
+            <li><a href="Estatisticas.html">Estatísticas</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Bem-vindo ao LearnGo</h1>
+            <p>Compartilhe caronas com universitários e ajude a reduzir as emissões de gases poluentes enquanto economiza.</p>
+            <a href="ComoFunciona.html" class="botao-cta">Saiba Mais</a>
+        </header>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LearnGo. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

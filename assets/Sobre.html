@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sobre Nós - LearnGo</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        nav {
+            background-color: #20164d;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav img {
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        nav img:hover {
+            transform: scale(1.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff784e;
+        }
+
+        .conteiner {
+            flex: 1;
+            padding: 40px;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #20164d;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px; 
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .equipe {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .equipe .membro {
+            width: 200px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .equipe img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .equipe h4 {
+            color: #20164d;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .equipe p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #20164d;
+            color: white; 
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+            font-size: 14px; 
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+        footer p {
+            margin: 0;
+            color: white; 
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            .conteiner {
+                padding: 30px 10px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .equipe {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav img {
+                height: 40px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="LogoLearnGo.png" alt="Logo LearnGo">
+        <ul>
+            <li><a href="Index.html">Início</a></li>
+            <li><a href="Sobre.html">Sobre</a></li>
+            <li><a href="ComoFunciona.html">Como Funciona</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+            <li><a href="FAQ.html">Perguntas Frequentes</a></li>
+            <li><a href="Historias.html">Histórias</a></li>
+            <li><a href="Estatisticas.html">Estatísticas</a></li>
+        </ul>
+    </nav>
+
+    <div class="conteiner">
+        <h2>Sobre Nós</h2>
+        <p>O LearnGo é um aplicativo criado para facilitar o compartilhamento de caronas entre universitários. Com ele, estudantes podem oferecer ou solicitar caronas de forma simples, segura e econômica. Nosso objetivo é promover a economia colaborativa e reduzir o número de carros nas universidades, contribuindo para a sustentabilidade e o bem-estar coletivo. Além de facilitar o transporte diário, o LearnGo também fortalece o senso de comunidade entre os estudantes, conectando pessoas com interesses em comum e criando um ambiente mais integrado e consciente.</p>
+
+        <h2>Conheça nossa equipe</h2>
+        <div class="equipe">
+            <div class="membro">
+                <img src="JoãoSilva- CEOeFundador.jpg" alt="Foto de João">
+                <h4>João Silva</h4>
+                <p>CEO e Fundador</p>
+            </div>
+            <div class="membro">
+                <img src="MariaSouza- DesenvolvedoraFullStack.jpg" alt="Foto de Maria">
+                <h4>Maria Souza</h4>
+                <p>Desenvolvedora Full Stack</p>
+            </div>
+            <div class="membro">
+                <img src="CarlosPereira.jpg" alt="Foto de Carlos">
+                <h4>Carlos Pereira</h4>
+                <p>Designer UX/UI</p>
+            </div>
+            <div class="membro">
+                <img src="AnaOliveira- EspecialistaemMarketing.jpg" alt="Foto de Ana">
+                <h4>Ana Oliveira</h4>
+                <p>Especialista em Marketing</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LearnGo. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
