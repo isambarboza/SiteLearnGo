@@ -84,18 +84,30 @@
             max-width: 800px;
             margin-bottom: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .story-img {
+            width: 100px; 
+            height: 100px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            margin-bottom: 10px; 
         }
 
         .story-title {
             font-weight: bold;
             color: #20164d;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         .story-content {
             color: #333;
             font-size: 16px;
             line-height: 1.5;
+            text-align: center; 
         }
 
         footer {
@@ -172,20 +184,26 @@
 
     <div class="container">
         <h2>Histórias de Usuários</h2>
+        
         <div class="story-card">
-            <div class="story-title">João e sua primeira carona</div>
+            <img src="João-estudante.jpg" alt="João" class="story-img"> <!-- Substitua pelo caminho da imagem de João -->
+            <div class="story-title">João</div>
             <div class="story-content">
                 João, um estudante de engenharia, compartilha como a LearnGo o ajudou a encontrar uma carona para sua faculdade. “Foi simples e rápido! Eu encontrei alguém da minha turma que morava perto e economizei muito em transporte.”
             </div>
         </div>
+        
         <div class="story-card">
-            <div class="story-title">Mariana e a economia no transporte</div>
+            <img src="Marina- Estudante.jpg" alt="Mariana" class="story-img"> <!-- Substitua pelo caminho da imagem de Mariana -->
+            <div class="story-title">Mariana</div>
             <div class="story-content">
                 Mariana, estudante de medicina, conta como a LearnGo ajudou a reduzir seus gastos com transporte. “Além de economizar, conheci pessoas incríveis e fiz novas amizades. O aplicativo realmente faz a diferença no meu dia a dia.”
             </div>
         </div>
+        
         <div class="story-card">
-            <div class="story-title">Pedro e a sustentabilidade</div>
+            <img src="Pedro-estudante.jpg" alt="Pedro" class="story-img"> <!-- Substitua pelo caminho da imagem de Pedro -->
+            <div class="story-title">Pedro</div>
             <div class="story-content">
                 Pedro, aluno de arquitetura, destaca como a LearnGo contribuiu para um transporte mais sustentável. “Utilizar o aplicativo não só reduz meus custos, mas também ajuda a diminuir a pegada de carbono. É uma iniciativa fantástica!”
             </div>

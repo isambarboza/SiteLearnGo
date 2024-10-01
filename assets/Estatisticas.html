@@ -26,7 +26,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
         }
 
         nav img {
@@ -76,40 +75,27 @@
             margin-bottom: 20px;
         }
 
-        .estatisticas {
+        .estatistica {
             background-color: #DFD8FF;
             padding: 20px;
             border-radius: 8px;
             width: 100%;
-            max-width: 800px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-            margin-bottom: 20px;
-        }
-
-        .estatisticas h3 {
-            color: #20164d;
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-
-        .numero-carros, .ultimo-mes, .usuarios {
-            background-color: #ff784e;
-            color: white;
-            padding: 10px;
-            border-radius: 8px;
-            font-size: 16px;
+            max-width: 195px; 
+            margin: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
             text-align: center;
-            margin-bottom: 10px;
-            transition: background-color 0.3s ease; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
         }
 
-        .numero-carros {
-            background-color: #ff784e;
+        .estatistica:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
         }
 
-        .ultimo-mes, .usuarios {
-            background-color: #DFD8FF;
+        .estatistica h3 {
             color: #20164d;
+            margin-bottom: 10px;
+            font-size: 18px;
         }
 
         footer {
@@ -119,11 +105,18 @@
             padding: 15px; 
             margin-top: auto;
             font-size: 14px; 
-            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); 
         }
 
         footer p {
             margin: 0;
+        }
+
+        .caixas-container {
+            display: flex;
+            justify-content: space-between; 
+            width: 100%;
+            flex-wrap: wrap; 
+            max-width: 1000px; 
         }
 
         @media (max-width: 768px) {
@@ -141,16 +134,12 @@
                 padding: 20px;
             }
 
-            .estatisticas {
-                padding: 15px;
+            .estatistica {
+                max-width: 90%; 
             }
 
             h2 {
                 font-size: 24px;
-            }
-
-            .numero-carros, .ultimo-mes, .usuarios {
-                font-size: 14px;
             }
         }
 
@@ -161,10 +150,6 @@
 
             h2 {
                 font-size: 22px;
-            }
-
-            .numero-carros, .ultimo-mes, .usuarios {
-                font-size: 12px;
             }
         }
     </style>
@@ -186,39 +171,26 @@
 
     <div class="container">
         <h2>Estatísticas de Caronas</h2>
-        <div class="estatisticas">
-            <h3>Quantidade de Carros Usados</h3>
-            <div class="numero-carros">
-                3.456
+        
+        <div class="caixas-container">
+            <div class="estatistica">
+                <h3>Quantidade de Carros Usados</h3>
+                <p>3.456</p>
             </div>
-        </div>
 
-        <div class="estatisticas">
-            <h3>Últimos Meses de Uso</h3>
-            <div class="ultimo-mes">
-                Agosto 2024: 1.234 Caronas
+            <div class="estatistica">
+                <h3>Últimos Meses de Uso</h3>
+                <p>Agosto 2024: 1.234 Caronas</p>
+                <p>Julho 2024: 980 Caronas</p>
+                <p>Junho 2024: 1.245 Caronas</p>
             </div>
-            <div class="ultimo-mes">
-                Julho 2024: 980 Caronas
-            </div>
-            <div class="ultimo-mes">
-                Junho 2024: 1.245 Caronas
-            </div>
-        </div>
 
-        <div class="estatisticas">
-            <h3>Usuários que Utilizaram Carona</h3>
-            <div class="usuarios">
-                Fernando Mellado
-            </div>
-            <div class="usuarios">
-                Júlia Martins
-            </div>
-            <div class="usuarios">
-                Pedro Santos
-            </div>
-            <div class="usuarios">
-                Beatriz Camargo
+            <div class="estatistica">
+                <h3>Usuários que Utilizaram Carona</h3>
+                <p>Fernando Mellado</p>
+                <p>Júlia Martins</p>
+                <p>Pedro Santos</p>
+                <p>Beatriz Camargo</p>
             </div>
         </div>
     </div>
